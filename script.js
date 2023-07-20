@@ -3,9 +3,9 @@ function trigger(){
     const password = document.querySelector('.password').value;
     if(mail == "a@gmail.com" && password == "password"){
         let span = document.querySelector('.span');
-        span.innerHTML = "Credenciales correctas"
+        span.innerHTML = " " + "correctas"
     }else{
         let span = document.querySelector('.span');
-        span.innerHTML = "Credenciales incorrectas"
+        span.innerHTML = " " + "incorrectas"
     }
 }
