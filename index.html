@@ -7,14 +7,23 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <h1>Validación de credenciales y operador &&</h1>
+    <h2>Validación de credenciales y operador &&</h2>
     <p>Mail: a@gmail.com</p>
     <p>Password: password</p>
     <input class="email" type="email" placeholder="Ingresa tu correo">
     <input class="password" type="password" placeholder="Contraseña">
-    <button onclick="trigger()">Prueba tus credenciales</button>
+    <button onclick="validacion()">Prueba tus credenciales</button>
     <p>Tus credenciales son:<span class="span"></span></p>
     <hr>
 
+    <h2>Validación de sueldo y operador ||</h2>
+    <label for="actual">Salario actual: </label>
+    <input name="actual" class="actual" type="number" placeholder="Ingresa tu salario actual">
+
+    <label for="anterior">Salario anterior: </label>
+    <input name="anterior" class="anterior" type="number" placeholder="Ingresa tu salario anterior">
+    <button onclick="salario()">Salario</button>
+    <p>Tu salario es:<span class="spanSalario"></span></p>
+    <hr>
 </body>
 </html>
