@@ -13,11 +13,11 @@ function validacion(){
 function salario(){
     const salarioActual = document.querySelector('.actual').value;
     const salarioAnterior = document.querySelector('.anterior').value;
-    if (salarioActual != ' ' || salarioAnterior != ' '){
+    if (salarioActual != '' || salarioAnterior != ''){ /*El espacio en blanco tambien cuenta como un valor*/
         spanSalario = document.querySelector('.spanSalario');
         spanSalario.innerHTML = " " + "Correcto";
     }else{
         spanSalario = document.querySelector('.spanSalario');
-        spanSalario.innerHTML = "Incorrecto";
+        spanSalario.innerHTML = " " + "Incorrecto";
     }
 }
