@@ -21,3 +21,14 @@ function salario(){
         spanSalario.innerHTML = " " + "Incorrecto";
     }
 }
+
+function check(){
+    const check = document.querySelector('#opt1').checked;
+    if(check == true){
+        const checked = document.querySelector('.checked');
+        checked.innerHTML = " " + "True";
+    }else{
+        const checked = document.querySelector('.checked');
+        checked.innerHTML = " " + "False";
+    }
+}
