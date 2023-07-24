@@ -32,3 +32,16 @@ function check(){
         checked.innerHTML = " " + "False";
     }
 }
+
+function checkedstatus(){
+    const checkopt2 = document.querySelector('#opt2').checked;
+    const checkopt3 = document.querySelector('#opt3').checked;
+    
+    if( checkopt2 == true && checkopt3 == true){
+        const checkedbox = document.querySelector('.checkedbox');
+        checkedbox.innerHTML =" " + "Ambas cajas han sido activadas (valor true)";
+    }else{
+        const checkedbox = document.querySelector('.checkedbox');
+        checkedbox.innerHTML =" " + "Una o ninguna de las cajas han sido activadas (valor false)";
+    }
+}
