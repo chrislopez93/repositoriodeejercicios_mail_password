@@ -45,3 +45,15 @@ function checkedstatus(){
         checkedbox.innerHTML =" " + "Una o ninguna de las cajas han sido activadas (valor false)";
     }
 }
+
+function checkedoption(){
+    const checkopt4 = document.querySelector('#opt4').checked;
+    const checkopt5 = document.querySelector('#opt5').checked;
+        if (checkopt4 == true || checkopt5 == true){
+            const btn_enviar = document.querySelector('.btn-enviar');
+            btn_enviar.disabled = false;
+        }else{
+            const btn_enviar = document.querySelector('.btn-enviar');
+            btn_enviar.disabled = true;
+        }
+}
